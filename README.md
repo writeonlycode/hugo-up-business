@@ -15,6 +15,7 @@
 Before you begin, make sure you have the following installed:
 
 * [Hugo](https://gohugo.io/getting-started/installing/)
+* [Go](https://go.dev/doc/install)
 * [Node.js](https://nodejs.org/)
 * npm (comes with Node.js)
 
