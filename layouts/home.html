@@ -1,8 +1,8 @@
 {{ define "main" }}
-  {{ with .Site.Data.home.hero }}{{ if .enable }}{{ partial "blocks/home/hero.html" . }}{{ end }}{{ end }}
-  {{ with .Site.Data.home.brands }}{{ if .enable }}{{ partial "blocks/home/brands.html" . }}{{ end }}{{ end }}
-  {{ with .Site.Data.home.portfolio }}{{ if .enable }}{{ partial "blocks/home/portfolio.html" . }}{{ end }}{{ end }}
-  {{ with .Site.Data.home.services }}{{ if .enable }}{{ partial "blocks/home/services.html" . }}{{ end }}{{ end }}
-  {{ with .Site.Data.home.testimonials }}{{ if .enable }}{{ partial "blocks/home/testimonials.html" . }}{{ end }}{{ end }}
-  {{ with .Site.Data.home.cta }}{{ if .enable }}{{ partial "blocks/home/cta.html" . }}{{ end }}{{ end }}
+  {{ with hugo.Data.home.hero }}{{ if .enable }}{{ partial "blocks/home/hero.html" . }}{{ end }}{{ end }}
+  {{ with hugo.Data.home.brands }}{{ if .enable }}{{ partial "blocks/home/brands.html" . }}{{ end }}{{ end }}
+  {{ with hugo.Data.home.portfolio }}{{ if .enable }}{{ partial "blocks/home/portfolio.html" . }}{{ end }}{{ end }}
+  {{ with hugo.Data.home.services }}{{ if .enable }}{{ partial "blocks/home/services.html" . }}{{ end }}{{ end }}
+  {{ with hugo.Data.home.testimonials }}{{ if .enable }}{{ partial "blocks/home/testimonials.html" . }}{{ end }}{{ end }}
+  {{ with hugo.Data.home.cta }}{{ if .enable }}{{ partial "blocks/home/cta.html" . }}{{ end }}{{ end }}
 {{ end }}
